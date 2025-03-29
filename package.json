@@ -1,0 +1,69 @@
+{
+  "name": "poppulo-design-system",
+  "version": "1.0.3",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "rollup -c",
+    "type": "module",
+    "test": "jest",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@fontsource/funnel-sans": "^5.2.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "styled-components": "^6.1.16"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.6",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@storybook/addon-essentials": "^8.6.10",
+    "@storybook/addon-onboarding": "^8.6.10",
+    "@storybook/blocks": "^8.6.10",
+    "@storybook/experimental-addon-test": "^8.6.10",
+    "@storybook/react": "^8.6.10",
+    "@storybook/react-vite": "^8.6.10",
+    "@storybook/test": "^8.6.10",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^29.5.14",
+    "@types/react": "^19.0.12",
+    "@vitest/browser": "^3.0.9",
+    "@vitest/coverage-v8": "^3.0.9",
+    "autoprefixer": "^10.4.21",
+    "babel-jest": "^29.7.0",
+    "eslint": "^9.23.0",
+    "eslint-plugin-storybook": "^0.12.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "playwright": "^1.51.1",
+    "postcss": "^8.5.3",
+    "rollup": "^4.37.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "storybook": "^8.6.10",
+    "tailwindcss": "^4.0.17",
+    "ts-jest": "^29.3.0",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.3",
+    "vitest": "^3.0.9"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
+}
